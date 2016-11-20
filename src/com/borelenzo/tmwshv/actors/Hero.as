@@ -191,6 +191,9 @@ package com.borelenzo.tmwshv.actors {
 				else{
 					visible = false;
 				}
+				if (_recoveryTimer == 0){
+					visible = true;
+				}
 			}
 			else{
 				bitmapData = animVector[_state][_goingToRight ? _frameNumber : _frameMax + _frameNumber];
